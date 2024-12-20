@@ -1,0 +1,112 @@
+.upload-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.upload-card {
+  flex: 1;
+  background: #fff;
+  border: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.upload-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap; /* Ensure all items stay in one row */
+}
+
+.transparent-btn {
+  flex: 1;
+  max-width: 200px;
+  height: 180px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  background: transparent;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.transparent-btn:hover {
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.transparent-btn .icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.blue-icon {
+  color: #007bff;
+}
+
+.transparent-btn span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.transparent-btn p {
+  font-size: 12px;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Circular Plus Button Styling */
+.add-btn {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 28px;
+  position: relative;
+}
+
+.add-btn:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .upload-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .upload-row {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+}

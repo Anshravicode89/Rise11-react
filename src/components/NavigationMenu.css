@@ -1,0 +1,75 @@
+.navigation-menu {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.navigation-menu h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  display: inline-flex;
+  align-items: center; /* Align logo and text vertically */
+}
+
+.navigation-menu img {
+  width: 50px; /* Adjust size for a small logo */
+  height: 50px; /* Keep it square */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navigation-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-menu li {
+  display: flex;
+  align-items: center; /* Align text and icons vertically */
+  font-size: 16px;
+  font-weight: 500;
+  color: #5a6e8d; /* Bluish-grey text color */
+  margin: 15px 0; /* Spacing between items */
+  padding: 8px 10px;
+  transition: all 0.3s ease; /* Smooth hover transition */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navigation-menu li:hover {
+  background: #007bff;
+  color: white;
+}
+
+.nav-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px; /* Icon size */
+  color: inherit;
+}
+
+.justice-banner {
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.justice-banner img {
+  width: 100%; /* Ensures the image scales responsively */
+  height: 250px; /* Restricts height for squarish appearance */
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  border-radius: 8px;
+  display: block;
+}
+
+.justice-banner p {
+  position: absolute;
+  top: 50%; /* Center text vertically */
+  left: 50%; /* Center text horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for centering */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase; /* Converts text to uppercase */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+}
