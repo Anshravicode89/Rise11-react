@@ -1,3 +1,53 @@
+Overview
+This dashboard was designed as an interactive and user-friendly platform for managing claims and disputes. It provides a step-by-step process to file claims, upload necessary documentation, and track progress, ensuring an intuitive experience for users.
+
+Approach to Building the Dashboard
+Component-Based Architecture:
+
+Developed the project using React, creating modular and reusable components such as ClaimForm, Navigation, ProgressBar, and UploadSection.
+Focused on separating logic and presentation for easier maintenance and scalability.
+Styling and Responsiveness:
+
+Designed the user interface with CSS to achieve a modern, professional look and feel.
+Ensured the dashboard is fully responsive, offering a seamless experience across devices of different screen sizes.
+Workflow Navigation:
+
+Implemented a multi-step progress tracker to guide users through the claim-filing process. The steps include Preliminary, Your Details, KYG, Parties, Claim, Review, and Payment.
+Document Handling:
+
+Integrated features for uploading files such as contracts, agreements, and additional documentation, with validation for file type and size.
+Real-Time Feedback:
+
+Incorporated dynamic form elements that provide instant feedback, such as alerts for exceeding claim limits (e.g., 150% of Contract Value).
+Challenges Faced and Solutions
+File Upload Handling:
+
+Challenge: Validating file type and size to ensure only valid files are uploaded.
+Solution: Added client-side validation to prevent invalid uploads and notify users of errors immediately.
+Progress Tracking:
+
+Challenge: Keeping the progress bar synchronized with user actions.
+Solution: Managed the progress state using React, dynamically updating it as users completed each step.
+Responsive Design:
+
+Challenge: Making the dashboard visually appealing and functional on all devices.
+Solution: Used CSS flexbox and grid layouts to achieve adaptability across screen sizes.
+State Management:
+
+Challenge: Handling complex user inputs and multi-step form data.
+Solution: Utilized React’s state management to efficiently manage form inputs and maintain a smooth user experience.
+Data Flow Consistency:
+
+Challenge: Ensuring seamless interaction between components for a consistent user experience.
+Solution: Established clear data flow between components using props and context.
+Assumptions
+Users are familiar with the basic workflow of filing claims and uploading documents.
+Uploaded documents are limited to PDF format with a maximum size of 2MB.
+All necessary details (e.g., language, location, contract value) are readily available for users during the process.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
